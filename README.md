@@ -8,11 +8,16 @@
 </p>
 
 ## Setup
+<p>
 create .env file
-npm install
-php artisan serve
-open new terminal:
-npm run dev
+
+</p>
+<p>npm install</p>
+<p>
+    php artisan serve
+</p>
+<p>open new terminal:
+npm run dev</p>
 
 ## About Laravel
 
