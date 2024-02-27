@@ -1,5 +1,6 @@
 <?php
 
+use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return inertia('index', ['test' => [1,2,3,4,5,'tess']]);
+    Inertia::setRootView('admin');
+    return inertia('Index', ['title' => 'Dashboard']);
+});
+
+Route::get('/projects', function () {
+    Inertia::setRootView('admin');
+    return inertia('Projects/Index', ['title' => 'Projects']);
 });
